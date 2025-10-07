@@ -1,8 +1,10 @@
 <script setup>
-import { ref } from 'vue'
 import { login } from '@/services/authService'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
+
+import { ref } from 'vue'
+
 
 const email = ref('')
 const password = ref('')
@@ -45,6 +47,7 @@ async function handleLogin() {
 meta:
   layout: empty
 </route>
+
 <template>
   <v-container class="fill-height" fluid>
     <v-row  justify="center">
